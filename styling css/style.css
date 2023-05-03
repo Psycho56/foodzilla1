@@ -280,7 +280,7 @@ footer {
   .hungry__page {
     width: 80%;
     height: 80%;
-    margin: 50px auto;
+    margin: 50px 140px;
     text-align: center;
   }
   
@@ -298,13 +298,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
-    /* justify-content: space-evenly; */
   }
 
   .images{
     position: relative;
     top: 0;
     left: 0;
+    margin: 0 auto;
   }
   
   .food-image {
@@ -420,7 +420,7 @@ footer {
     z-index: 2;
     position: absolute;
     bottom: 15px;
-    left: 0;
+    left: 10px;
     color: var(--clr-paragraph);
     font-size: 17px;
   }
@@ -486,8 +486,8 @@ footer {
 
 
    .customers__page {
-    width: 80%;
-    height: 80%;
+    width: 78%;
+    height: 50%;
     margin: 90px auto;
     text-align: center;
    }
@@ -502,41 +502,30 @@ footer {
     font-size: var(--size-5xl);
     letter-spacing: 2px;
    }
-
-
-
-
-   .carousel-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-    height: 50vh;
-   }
-   .carousel-item {  
-    width: 30%;
-    background-color: var(--clr-card-bg);
+   .carousel {
+    width: 33.3%;
+    background-color: rgba(128, 128, 128, 0.404);
     border-radius: 5px;
    }
-   .carousel-item p {
-    margin: 20px 0;
-   }
-
-   .personal {
+  .c-wrapper {
     display: flex;
+    margin-top: 60px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 15px;
+    height: 45%;
+    padding: 30px 0;
+  }
+  .personal {
+    display: flex;
+    margin-top: 15px;
     justify-content: center;
-    align-items: center;
-    gap: 18px;
-   }
-   .personal-info {
-    line-height: 0;
-   }
-
-   .personal-info span {
-    font-size: 12px;
-   } 
-
-
+    gap: 15px;
+  }
+  .carousel p {
+    margin:20px 0;
+    font-size: 18px;
+  }
    
 
 footer {
@@ -568,6 +557,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 20px 0;
+  box-shadow: 0 0 2px 0 grey;
 }
 
 .question h1 {
@@ -743,10 +733,10 @@ footer {
    }
    .hungry__page {
     width: 100%;
+    margin: 0;
    }
    .food-images {
     width: 100%;
-    /* justify-content: center; */
    }
    .images{
     width: 48%;
@@ -760,27 +750,31 @@ footer {
    }
    .crave__page {
     width: 100%;
-    padding: 0;
+    padding: 0 10px;
    }
    .crave__images {
-    /* flex-direction: column; */
     flex-wrap: wrap;
     align-items: center;
-    margin: 0;
-    gap: 4px;
-    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 7px;
+    width: 95%;
    }
    .crave__wrapper {
     width: 49%;
+    padding: 0 10px;
    }
    .crave-menu__btn {
-    margin: 30px 0;
+    margin: 10px 0;
+   }
+   .crave__wrapper span{
+     font-size: 14px;
    }
    .meet__page {
     width: 100%;
+    margin-top: 40px;
    }
    .meet__images {
-    /* flex-direction: column; */
     flex-wrap: wrap;
     align-items: center;
    }
@@ -790,14 +784,19 @@ footer {
    .meet__image {
     width: 49%;
    }
-   .carousel-inner {
-    display: flex;
-    flex-wrap: wrap;
+   .customers__page h1 {
+    font-size: 26px;
    }
-
-   .carousel-item {
+   .customers__page {
+    width: 100%;
+     }
+   .c-wrapper {
+    flex-direction: column;
+   }
+   .carousel {
     width: 100%;
    }
+
    footer {
     overflow: hidden;
     height: auto;
@@ -844,10 +843,10 @@ footer {
     }
     .wrapper {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
     }
-    .social,.more {
-      margin-left: 70px;
+    .social {
+      margin-left: 90px;
     }
     .arrow-wrapper {
       margin-top: 50px;
